@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>sign up form</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-md-1">
+      <div class="heading">
+        <h1> Learn to code by watching others </h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <h4> Try it free 7 days <span class="muted-text">then $20/mo. thereafter</span> </h4>
+      <div class="col-md-3">
+        <form action="" class="signup-form" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="First name">
+            <img src="images/icon-error.svg" class="error-icon" alt="">
+            <p class="error-text">First name cannot be empty</p>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Last name">
+            <img src="images/icon-error.svg" class="error-icon" alt="">
+            <p class="error-text">Last name cannot be empty</p>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email address">
+            <img src="images/icon-error.svg" class="error-icon" alt="">
+            <p class="error-text">Not an valid email</p>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+            <img src="images/icon-error.svg" class="error-icon" alt="">
+            <p class="error-text">Password cannot be empty</p>
+          </div>
+          <div class="form-group">
+            <button class="btn"> Claim your free trial </button>
+          </div>
+        </form>
+        <p class="terms"> By clicking the button, you are agreeing to our <span class="muted">Terms and
+            Services</span> </p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

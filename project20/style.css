@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #341f97;
+}
+.container{
+    width:60%;
+    background-color: #FFF;
+    padding:2em;
+    margin: 5em auto;
+    position: relative;
+    border-radius: 0.4em;
+}
+.slider{
+    width:100%;
+    position: relative;
+    border:1px solid #000;
+    text-align: center;
+}
+.slider img{
+    width:100%;
+    display: none;
+}
+
+.btn{
+    border:0;
+    outline:0;
+    background:0;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute;
+    background:#8395a7;
+    height:40px;
+    width:40px;
+}
+.left-btn{
+    left:20px;
+    top: 45%;
+}
+.right-btn{
+    right:20px;
+    top: 45%;
+}

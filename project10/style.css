@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    height: 10vh;
+    background-color: chocolate;
+    width:100%;
+}
+.navbar .logo{
+    font-size: 2rem;
+    margin-left: 2rem;
+    border:1px solid #fff;
+}
+.navbar .logo a{
+    color:cornsilk;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+}
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+.navbar .nav li{
+    list-style: none;
+    padding: 0 1.5rem;
+    position: relative;
+}
+.navbar .nav li a{
+    text-decoration: none;
+    color:cornsilk;
+    font-weight: 300;
+    transition: 1s ease-in;
+}
+.navbar .nav li a:hover{
+    color:darkgray;
+}
+.navbar .nav li a::after{
+    content:'';
+    position: absolute;
+    left:20%;
+    bottom:0;
+    width:0;
+    height:0.1rem;
+    background:floralwhite;
+    transition: all ease-in .3s;
+}
+.navbar .nav li:hover a::after{
+    width: 60%;
+}
+.hamburger{
+    display:none;
+ }
+ .bar{
+    display: block;
+    flex-direction: column;
+    width: 25px;
+    height:3px;
+    background-color: floralwhite;
+    margin:5px auto;
+}
+@media screen and (max-width:768px){
+    .navbar .nav{
+        position: absolute;
+        top:5rem;
+        left:-100%;
+        width:100%;
+        background-color:lightgray;
+        flex-direction: column;
+        text-align: center;
+        transition: 1s ease;
+    }
+    .navbar .nav li {
+        padding: 1.5rem 0;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 2rem;
+    }
+    .nav.active{
+        left:0;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

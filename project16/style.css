@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 800px;
+    min-height: 500px;
+    margin: 5em auto;
+    background-color: hsl(192.00,15.15%,93.53%);
+    padding: 2em 0;
+}
+.header{
+    text-align: center;
+}
+.header .form .form-group .form-control{
+    height: 2em;
+    width: 40%;
+    border:0;
+    padding: 0 1em;
+    font-size: 1.3em;
+    color:hsl(183.53,8.72%,61.76%);
+    font-weight: 100;
+}
+.header .form{
+    margin: 1.8em 0;
+}
+.header .form .form-group .form-control:focus{
+   outline:0;
+}
+.header .form .form-group .btn-add{
+    padding: 1em 2em;
+    margin:0 0;
+    border:0;
+    background-color: hsl(204.07,69.87%,53.14%);
+    margin:0 0.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .list-group{
+    margin: 1em auto;
+    width:52%;
+}
+.header .list-group .list-group-item{
+    list-style: none;
+    background-color: #FFF;
+    padding: 1em 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 2s ease-in-out;
+    margin-bottom: 0.4em;
+}
+.header .list-group .list-group-item .close-btn{
+    cursor: pointer;
+    font-size: 1.5em;
+    padding:0;
+    font-weight: 100;
+    width: 15px;
+}
+.completed-todo{
+    text-decoration: line-through;
+}
+.close-btn{
+    width:100px;
+}
+.inactive{
+    opacity : 0.4;
+}
+.actions{
+    width:52%;
+    display: flex;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 1em 0.8em;
+    justify-content: space-between;
+    color:#ccc;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+.form-group{
+    margin: 0 0.5em;
+}
+.btn-filter{
+    border:0;
+    background:0;
+    margin: 0 0.5em;
+    color:#ccc;
+    cursor: pointer;
+}

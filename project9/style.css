@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend', sans-serif;
+}
+h2{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+p{
+    line-height: 1.2rem;
+    color:#FFFFFF;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+.suv,.sedan,.luxury{
+    height:400px;
+    width:250px;
+    padding: 2rem 2rem;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5rem;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5rem;
+}
+.btn{
+    width:70%;
+    text-align: center;
+    padding: 0.7rem 0;
+    font-size: 0.8;
+    border-radius: 5rem;
+    outline: 0;
+    border:0
+}
+.btn-orange{
+    color: hsl(31, 77%, 52%);
+}
+.btn-green{
+    color:hsl(184, 100%, 22%);
+}
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0 10px 0;
+    }
+    .sedan{
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+    .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+    }
+}

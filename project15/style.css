@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(235, 16%, 14%);
+    background-image: url('./images/bg-stars.svg');
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+.container{
+    width:800px;
+    height:100vh;
+    margin: 8em auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.container h2{
+    color:hsl(0, 0%, 100%);
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 0.3em;
+    font-size: 2em;
+}
+.container .countdown{
+    display: flex;
+    align-items: center;
+}
+.container .countdown div{
+    padding: 5em 2em;
+    color:hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.container .countdown div h3{
+    margin-bottom: 1em;
+    font-size: 3.5em;
+    color: hsl(345, 95%, 68%);
+    width:100%;
+    background:hsl(236, 21%, 26%);
+    padding:0.7em;
+}
+.container .countdown div p{
+    text-align: center;
+}
+.container .hills{
+    position:absolute;
+    bottom:8em;
+}
+.container .hills .social{
+    position:absolute;
+    left:45%;
+    z-index:999;
+    bottom:3em;
+    display: flex;
+    align-items: center;
+}
+.container .hills .social li{
+    padding: 0 1em;
+    list-style: none;
+}

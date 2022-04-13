@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+.container{
+    max-width:650px;
+    min-height: 300px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 4px 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,150px,220px);
+}
+.header{
+    background-color: #FFF;
+    grid-column: 1/4;
+    padding:2em;
+}
+.header h5{
+    color:hsl(179, 62%, 43%);
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+.header .lead{
+    font-weight:700;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1em;
+}
+.header p{
+    color:hsl(218, 22%, 67%);
+    font-size: 0.9em;
+}
+.content-1{
+    background-color: hsl(179, 62%, 43%);
+    padding:2em;
+}
+h6{
+     font-weight: 700;
+     font-size: 1em;
+     color:#FFF;
+     margin-bottom: 1em;
+ }
+ .content-1 .dollar{
+     color:#FFF;
+     margin-right: 0.6em;
+     font-size: 1.5em;
+ }
+ .content-1 .text{
+     color:#FFF;
+ }
+ .content-1 p{
+     margin: 0.8em 0;
+     color:#FFF;
+     font-weight:400;
+ }
+ .btn{
+     padding: 0.9em 4em;
+     border:0;
+     outline:0;
+     background-color: hsl(71, 73%, 54%);
+     color:#FFF;
+     border-radius:0.2em;
+     font-size: 0.8em;
+     text-align: center;
+     margin: 1em 3em;
+     box-shadow:  rgba(0, 0, 0, 0.1) 2px 2px 12px;
+ }
+.content-2{
+    background-color: hsl(179, 62%, 43%,.6);
+    padding:2em;
+}
+.content-2 p{
+    font-size: 0.9em;
+    font-weight: 400;
+    color:#FFF;
+    line-height: 1.6;
+}
+@media screen and (max-width:768px){
+    body{
+        padding: 2em;
+    }
+    .container{
+        max-width:700px;
+        padding:2em;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,auto);
+    }
+    .header{
+        grid-column: 1/2;
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.container{
+    max-width:750px;
+    border:1px solid #bdc3c7;
+}
+.container .main-image img{
+    width: 100%;
+}
+.container .images img{
+    width: 100%;
+}
+.container .images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:0.2em;
+}

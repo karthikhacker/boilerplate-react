@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="player">
+            <h2 id="title"></h2>
+            <h3 id="artist"></h3>
+            <div class="image">
+                <img src="images/1.jpeg" alt="">
+            </div>
+            <audio src="music/1.mp3"></audio>
+            <div class="progress-container">
+                <div class="progress-duration">
+                    <div id="current-time">0:00</div>
+                    <div id="duration"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa fa-backward" id="prev" aria-hidden="true"></i>
+                <i class="fa fa-play" id="play" aria-hidden="true"></i>
+                <i class="fa fa-forward" id="next" aria-hidden="true"></i>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

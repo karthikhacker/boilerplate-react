@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:450px;
+    min-height: 500px;
+    padding:1em;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.container .error{
+    width:60%;
+    margin: 1em auto;
+    background-color:#f94144;
+    color:#FFF;
+    font-weight: 400;
+    font-size: 1em;
+    padding:0.3em 0 ;
+    display: none;
+}
+.container form{
+    width:100%;
+    margin:1em 0;
+}
+.container form .form-group{
+    padding:0.7em;
+    border:1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2em;
+}
+.form-group .form-control{
+    flex-basis: 80%;
+    padding:0 1em;
+    font-size: 1em;
+    outline:none;
+    border:none;
+    font-weight: 700;
+    color:#001219;
+}
+.form-group .btn{
+    padding:0.6em;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    border:0;
+    outline:none;
+    background-color:#BE90D4;
+    color:#FFF;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+}
+.form-group .btn:hover{
+    background-color: #EA4C88;
+    color:#FFF;
+}
+.form-group .btn:active{
+    transform:scale(0.19);
+}
+.list-group{
+    width:100%;
+    list-style-type: none;
+    padding:1em;
+}
+.list-group .list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.8em;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.1);
+    margin:0.5em 0;
+    cursor: pointer;
+    transition:1s;
+}
+.list-group .list-group-item .checkbox{
+    display: none;
+}
+.list-group .list-group-item .custom-checkbox .checkbox_box{
+    width:1.5em;
+    height:1.5em;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-group .list-group-item .custom-checkbox .checkbox_box::after{
+    content:'\2713';
+    color:#FFF;
+}
+.list-group .list-group-item .custom-checkbox .checkbox:checked + .checkbox_box{
+    background-color: #073b4c;
+    border:1px solid #fff;
+}
+.fade-out{
+    transform:translateX(980px);
+    transition: 1s;
+}
+.completed{
+    text-decoration: line-through;
+    color:#CCC;
+    font-style: italic;
+}
+.close{
+    cursor: pointer;
+    font-size: 1em;
+}
+.fa-times{
+    font-size: 1.5em;
+    transition:0.7s;
+}
+.fa-times:hover{
+    color:#c32f27;
+}
